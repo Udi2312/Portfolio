@@ -136,7 +136,7 @@ export default function Portfolio() {
         "A modern, responsive personal portfolio website showcasing my projects, skills, and achievements with an elegant and minimal UI.",
       technologies: ["Next.js", "Tailwind CSS", "Lucide React"],
       liveDemo: "#",
-      github: "#",
+      github: "https://github.com/Udi2312/Portfolio",
       image: "/Portfolio.png",
     },
   ];
