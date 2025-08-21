@@ -109,7 +109,7 @@ export default function Portfolio() {
         "Developed CruiseEase, a role-based cruise ship management platform featuring live data dashboards, booking management, and admin controls.",
       technologies: ["Next.js", "Node.js", "MongoDB", "Firebase Auth", "CryptoJs", "Geocoding API"],
       liveDemo: "https://cruise-ease-8un892wuc-udit23122004-3240s-projects.vercel.app/",
-      github: "#",
+      github: "https://github.com/Udi2312/Cruise-Ease",
       image: "/Cruise-ease.png",
     },
     {
@@ -118,7 +118,7 @@ export default function Portfolio() {
         "SafeRadius is a privacy-first POI discovery platform that allows users to find nearby hospitals, gyms, restaurants, and banks without sharing their location data, using end-to-end encryption and secure role-based access.",
       technologies: ["React.js", "Firebase", "Tailwind CSS"],
       liveDemo: "https://safe-radius-hgp93zdqh-udit23122004-3240s-projects.vercel.app/",
-      github: "#",
+      github: "https://github.com/Udi2312/Safe-Radius",
       image: "/safe-radius.png",
     },
     {
@@ -127,7 +127,7 @@ export default function Portfolio() {
        "Developed a real-time one-on-one chat application inspired by WhatsApp using the MERN stack with Socket.IO for instant messaging and secure user authentication.",
       technologies: ["JavaScript", "React.js", "Socket.IO", "Axios" , "bcrypt"],
       liveDemo: "https://chat-app-8qrc.onrender.com/login",
-      github: "#",
+      github: "https://github.com/Udi2312/Chat-App",
       image: "/Chatty.png",
     },
     {
