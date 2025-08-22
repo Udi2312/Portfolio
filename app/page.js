@@ -69,6 +69,8 @@ export default function Portfolio() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  
+
   useEffect(() => {
     const carousel = testimonialsRef.current;
     if (!carousel) return;
@@ -107,7 +109,7 @@ export default function Portfolio() {
       title: "Cruise-Ease",
       description:
         "Developed CruiseEase, a role-based cruise ship management platform featuring live data dashboards, booking management, and admin controls.",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Firebase Auth", "CryptoJs", "Geocoding API"],
+      technologies: ["Next.js", "Node.js", "MongoDB", "NextAuth"],
       liveDemo: "https://cruise-ease-8un892wuc-udit23122004-3240s-projects.vercel.app/",
       github: "https://github.com/Udi2312/Cruise-Ease",
       image: "/Cruise-ease.png",
@@ -116,7 +118,7 @@ export default function Portfolio() {
       title: "Safe-Radius",
       description:
         "SafeRadius is a privacy-first POI discovery platform that allows users to find nearby hospitals, gyms, restaurants, and banks without sharing their location data, using end-to-end encryption and secure role-based access.",
-      technologies: ["React.js", "Firebase", "Tailwind CSS"],
+      technologies: ["Next.js", "Node.js", "MongoDB", "Firebase Auth", "CryptoJs", "Geocoding API"],
       liveDemo: "https://safe-radius-hgp93zdqh-udit23122004-3240s-projects.vercel.app/",
       github: "https://github.com/Udi2312/Safe-Radius",
       image: "/safe-radius.png",
@@ -211,26 +213,41 @@ export default function Portfolio() {
 
   const experiences = [
     {
-      title: "Frontend Development Intern",
-      company: "TechStart Solutions",
-      dates: "Jun 2024 - Aug 2024",
+      title: "Web Development Learner",
+      company: "Maharaja Agarsen Institute of Technology, Delhi",
+      dates: "Jun 2024 - Sep 2024",
       description:
-        "Developed responsive web components using React.js and collaborated with the design team to implement user interfaces. Improved website performance by 25% through code optimization.",
+        "Started my web dev journey after my 2nd year of engineering. Learned the basics of HTML, CSS, and JavaScript.",
     },
     {
-      title: "Freelance Web Developer",
-      company: "Various Clients",
-      dates: "Jan 2024 - Present",
+      title: "Hackathon Participant – Code4Cause",
+      company: "NSUT Hackathon",
+      dates: "Sept 2024",
       description:
-        "Created custom websites for small businesses using modern web technologies. Delivered 5+ projects on time and within budget, maintaining 100% client satisfaction.",
+        "Built 'BuddyFi' – a friend-finder app inspired by Tinder's UX Gained hands-on experience with Tailwind CSS and UI libraries",
     },
     {
-      title: "Academic Project Lead",
-      company: "University Project",
-      dates: "Sep 2023 - Dec 2023",
+      title: "Winner of Hackathon- MindOverData",
+      company: "Bharti Vidyapeeth College of Engineering",
+      dates: "Oct 2024",
       description:
-        "Led a team of 4 students in developing a campus management system. Implemented agile methodologies and delivered a fully functional web application.",
+        "Led a team of four students to victory in a data science hackathon by implementing machine learning algorithms and performing data analysis using Python libraries such as NumPy and pandas.",
     },
+    {
+      title: "MERN Stack Developer – Personal Projects",
+      company: "Self Projects",
+      dates: "Dec 2024 - May 2025",
+      description:
+        "Developed and deployed full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and other frameworks like Next.js. Gained experience in building RESTful APIs and integrating third-party services."
+    },
+    {
+      title: "Full Stack Web Developer Intern",
+      company: "Unified Mentor",
+      dates: "June 2025 - Aug 2025",
+      description:
+        "Completed an internship focused on full-stack web development, working extensively with Next.js, Node.js, Express.js, and MongoDB. Built and optimized dynamic web applications, implemented responsive UIs, and integrated RESTful APIs to enhance functionality and performance."
+    },
+    
   ];
 
   return (
@@ -534,7 +551,7 @@ export default function Portfolio() {
                   </div>
                 </div>
               ))}
-              <div className="relative md:flex md:items-center">
+              {/* <div className="relative md:flex md:items-center">
                 <div className="absolute -left-2 top-1 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-green-500 rounded-full border-2 border-gray-900"></div>
                 <div className="md:w-1/2 md:pr-10">
                   <div className="bg-gray-950 rounded-xl p-6 border border-gray-800 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10">
@@ -549,12 +566,12 @@ export default function Portfolio() {
                         </div>
                         <div className="text-gray-400 text-sm">
                           Expected Graduation: 2025
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        </div> */}
+                      {/* </div> */}
+                    {/* </div> */}
+                  {/* </div> */}
+                {/* </div> */}
+              {/* </div> */}
             </div>
           </div>
         </section>
@@ -611,96 +628,107 @@ export default function Portfolio() {
 
         {/* Contact Section */}
         <section id="contact" className="py-20 px-4 bg-gray-900">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 relative">
-              <span className="bg-gradient-to-r from-emerald-400 via-lime-400 to-green-400 bg-clip-text text-transparent">
-                Contact Me
-              </span>
-              <span className="absolute left-1/2 -bottom-2 w-16 h-1 bg-green-500 rounded-full transform -translate-x-1/2"></span>
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className="flex flex-col justify-center text-center md:text-left">
-                <p className="text-xl text-gray-300 mb-6">
-                  I'm always open to new opportunities and collaborations. Feel
-                  free to reach out!
-                </p>
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-center justify-center md:justify-start gap-3">
-                    <Mail className="w-6 h-6 text-emerald-400" />
-                    <a
-                      href="mailto:udit.ban2312@gmail.com"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      udit.ban2312@gmail.com
-                    </a>
-                  </div>
-                  <div className="flex items-center justify-center md:justify-start gap-3">
-                    <Linkedin className="w-6 h-6 text-lime-400" />
-                    <a
-                      target="_blank"
-                      href="https://www.linkedin.com/in/udit-bansal-4515712b2/"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      linkedin.com/in/uditbansal
-                    </a>
-                  </div>
-                  <div className="flex items-center justify-center md:justify-start gap-3">
-                    <Github className="w-6 h-6 text-green-400" />
-                    <a
-                      target="_blank"
-                      href="https://github.com/Udi2312"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      github.com/uditbansal
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <form className="bg-gray-950 p-8 rounded-xl border border-gray-800 space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-gray-300 mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-emerald-500 focus:outline-none transition-colors"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-gray-300 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-lime-500 focus:outline-none transition-colors"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-gray-300 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-green-500 focus:outline-none transition-colors resize-none"
-                    placeholder="Your message..."
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-emerald-500 to-lime-500 text-white py-3 rounded-lg transition-transform hover:scale-105 font-semibold shadow-lg shadow-emerald-500/25"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 relative">
+      <span className="bg-gradient-to-r from-emerald-400 via-lime-400 to-green-400 bg-clip-text text-transparent">
+        Contact Me
+      </span>
+      <span className="absolute left-1/2 -bottom-2 w-16 h-1 bg-green-500 rounded-full transform -translate-x-1/2"></span>
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="flex flex-col justify-center text-center md:text-left">
+        <p className="text-xl text-gray-300 mb-6">
+          I'm always open to new opportunities and collaborations. Feel
+          free to reach out!
+        </p>
+        <div className="space-y-4 mb-8">
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            {/* Mail icon from lucide-react */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail w-6 h-6 text-emerald-400"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a
+              href="mailto:udit.ban2312@gmail.com"
+              className="text-gray-300 hover:text-white transition-colors"
+            >
+              udit.ban2312@gmail.com
+            </a>
           </div>
-        </section>
-
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            {/* Linkedin icon from lucide-react */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin w-6 h-6 text-lime-400"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/udit-bansal-4515712b2/"
+              className="text-gray-300 hover:text-white transition-colors"
+              rel="noopener noreferrer" // Added for security best practice
+            >
+              linkedin.com/in/uditbansal
+            </a>
+          </div>
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            {/* Github icon from lucide-react */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github w-6 h-6 text-green-400"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1.09 0-3.44 1.39-1-.27-2-.38-3.08-.38-.94 0-1.92.09-3 .38C6.5 2 5.5 2 5.5 2c-.55 1.06-.92 2.23-.78 3.46 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+            <a
+              target="_blank"
+              href="https://github.com/Udi2312"
+              className="text-gray-300 hover:text-white transition-colors"
+              rel="noopener noreferrer" // Added for security best practice
+            >
+              github.com/uditbansal
+            </a>
+          </div>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/mldlqbzw" method="POST" className="bg-gray-950 p-8 rounded-xl border border-gray-800 space-y-6">
+        <div>
+          <label htmlFor="name" className="block text-gray-300 mb-2">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name" 
+            className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-emerald-500 focus:outline-none transition-colors"
+            placeholder="Your Name"
+            required // Added for basic validation
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block text-gray-300 mb-2">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email" 
+            className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-lime-500 focus:outline-none transition-colors"
+            placeholder="your.email@example.com"
+            required // Added for basic validation
+          />
+        </div>
+        <div>
+          <label htmlFor="message" className="block text-gray-300 mb-2">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message" 
+            rows={5}
+            className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 placeholder-gray-500 focus:border-green-500 focus:outline-none transition-colors resize-none"
+            placeholder="Your message..."
+            required // Added for basic validation
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          className="w-full bg-gradient-to-r from-emerald-500 to-lime-500 text-white py-3 rounded-lg transition-transform hover:scale-105 font-semibold shadow-lg shadow-emerald-500/25"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+  
+</section>
         {/* Footer */}
         <footer className="bg-gray-950 border-t border-gray-800 py-8 px-4 text-center">
           <div className="max-w-7xl mx-auto">
@@ -736,6 +764,7 @@ export default function Portfolio() {
             </div>
           </div>
         </footer>
+        
       </main>
     </div>
   );
