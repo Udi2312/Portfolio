@@ -344,7 +344,7 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12 animate-fade-in animation-delay-1500">
               <a
-                href="/My Resume.pdf"
+                href="/Udit Bansal Resume.pdf"
                 download
                 className="bg-gradient-to-r from-emerald-500 to-lime-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition-transform hover:scale-105 shadow-lg shadow-emerald-500/25 inline-flex items-center justify-center gap-2"
               >
